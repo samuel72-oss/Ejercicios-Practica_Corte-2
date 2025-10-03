@@ -58,6 +58,29 @@ int main()
                 cout<<"¡¡¡¡¡¡ERROR DEL USUARIO!!!!!!"<<endl;
                 cout << "Error en la digitación del operador\n";
             }
+            if (c=='+'){
+                cout<<"El resultado de tu operación solicitada (+) es: "<<endl;
+                performOperation(add, a, b);
+            }
+            else if (c=='-'){
+                cout<<"El resultado de tu operación solicitada (-) es: "<<endl;
+                performOperation(resta, a, b);
+            }
+            else if (c=='*'){
+                cout<<"El resultado de tu operación solicitada (*) es: "<<endl;
+                performOperation(mult, a, b);
+            }
+            else if (c=='/'){
+                if (b!=0){
+                    cout<<"El resultado de tu operación solicitada (/) es: "<<endl;
+                    performOperation(divis, a, b);
+                }
+                else {
+                    cout<<"¡¡¡¡¡¡ERROR DEL USUARIO!!!!!!"<<endl;
+                    cout<<"No se puede dividir entre 0: Tu resultado es INDETERMINADO"<<endl;
+                }
+            }
+        }
 
     }
 }
