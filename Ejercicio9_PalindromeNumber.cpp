@@ -28,6 +28,12 @@ int main(){
         }
         i++;
         j++;
-
     }
+    if (a==true){
+        cout<<"Su número es palindromo";
+    }
+    if (a==false){
+        cout<<"Su número no es palíndromo";
+    }
+
 }
