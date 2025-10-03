@@ -26,5 +26,29 @@ int main() {
     int target;
     cout<<"Ingrese el número objetivo: ";
     cin>>target;
+    for (int i = 0; i < n; i++) {
+        int j=0;
+        while(j<n) {
+            r= nums[i];
+            s =r+nums[j];
+            if (s == target) {
+                vjs=s;
+                t=i;
+                l=j;
+            }
+            j++;
+        }
+    }
+    if (s!=0 && t!=l){
+        cout<<"Suma encontrada: "<<vjs<<endl;
+        cout<<"Índice 1: "<<l<<endl;
+        cout<<"Índice 2: "<<t<<endl;
+    }
+    else{
+        cout<<"No se encontraron dos números que sumen el objetivo."<<endl;
+    
+    }
+     
+
 
 }
