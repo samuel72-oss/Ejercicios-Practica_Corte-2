@@ -49,5 +49,15 @@ int main()
             cout<<"¡¡¡¡¡¡ERROR DEL USUARIO!!!!!!"<<endl;
             cout<<"El usuario no digito un numero"<<endl;
         }
+        else{
+
+        cout<<"Que operación deseas realizar? (+),(-),(*),(/) ";
+        cin>>c;
+
+            if (c != '+' && c != '-' && c != '*' && c != '/') {
+                cout<<"¡¡¡¡¡¡ERROR DEL USUARIO!!!!!!"<<endl;
+                cout << "Error en la digitación del operador\n";
+            }
+
     }
 }
