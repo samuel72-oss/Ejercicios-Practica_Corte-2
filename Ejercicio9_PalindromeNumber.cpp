@@ -16,4 +16,18 @@ int main(){
         i++;
         j++;
     }
+    i=0;
+    j=1;
+    while(i<n && i!=j){
+        if(x[i]!=x[n-j]){
+            i=j;
+            a=false;
+        }
+        else{
+            a=true;
+        }
+        i++;
+        j++;
+
+    }
 }
