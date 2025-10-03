@@ -30,10 +30,10 @@ int main(){
         j++;
     }
     if (a==true){
-        cout<<"Su número es palindromo";
+        cout<<"Su número es palindromo"<<endl;
     }
     if (a==false){
-        cout<<"Su número no es palíndromo";
+        cout<<"Su número no es palíndromo"<<endl;
     }
 
 }
